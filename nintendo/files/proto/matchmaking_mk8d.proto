@@ -18,13 +18,6 @@ struct SimpleSearchObject {
 	uint32 community_id;
 	string community_code;
 	SimpleSearchDateTimeAttribute datetime;
-	
-	nex 40000 {
-		revision 1 {
-			uint32 unk3;
-			datetime unk4;
-		}
-	}
 }
 
 struct SimpleSearchDateTimeAttribute {

@@ -9,12 +9,6 @@ struct NotificationEvent {
 	nex 30500 {
 		pid param3 = 0;
 	}
-	
-	nex 40000 {
-		revision 1 {
-			map<string, variant> map = {};
-		}
-	}
 }
 
 protocol Notification : 14 {

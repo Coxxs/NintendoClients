@@ -849,7 +849,7 @@ class CodeGenerator:
 		if cond.type == Condition.VERSION:
 			stream.write_line('if %ssettings["nex.version"] >= %i:' %(prefix, cond.value))
 		else:
-			stream.write_line("if version >= %i:" %cond.value)
+			stream.write_line("if True:" %cond.value)
 	
 	def generate_struct_version(self, stream, struct):
 		if struct.body.has_revision():
